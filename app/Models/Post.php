@@ -18,6 +18,6 @@ class Post extends Model
 
     public function moods()
     {
-        return $this->belongsToMany(Mood::class);
+        return $this->belongsToMany(Mood::class, 'post_mood');
     }
 }

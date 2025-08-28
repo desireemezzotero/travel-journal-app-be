@@ -22,6 +22,11 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             PostsTableSeeder::class,
+            PhotosTableSeeder::class,
+            TagsTableSeeder::class,
+            PostsTagsTableSeeder::class,
+            MoodsTableSeeder::class,
+            PostsMoodsTableSeeder::class,
         ]);
     }
 }
