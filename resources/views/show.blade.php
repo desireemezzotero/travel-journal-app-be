@@ -27,6 +27,10 @@
            @endforeach
         </tr>
 
+       @foreach ($post->photos as $photo)
+         <img src="{{ asset('storage/' . $photo->url) }}" alt="Immagine post" style=""/>
+       @endforeach
+
         @auth
            @if(auth()->user()->remember_token === auth()->user()->remember_token)
            <tr class="border-b">
